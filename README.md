@@ -63,8 +63,8 @@ Custom CSS styling is applied to display a chat-like interface.
 ## How to Run
 1. Clone the repo:
    ```bash
-   git clone https://github.com/<your-username>/<repo-name>.git
-   cd <repo-name>
+   git clone https://github.com/Supun200110/covid_info_chatbot_and_tracker.git
+   cd covid_info_chatbot_and_tracker
    
 
 ## Create a virtual environment and install dependencies:  
