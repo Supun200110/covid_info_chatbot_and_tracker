@@ -1,0 +1,149 @@
+/* Main background */
+.stApp {
+    background: url("https://images.unsplash.com/photo-1584036561566-baf8f5f1b144") no-repeat center center fixed;
+    background-size: contain;   /* Show entire image */
+    background-position: right;
+    background-attachment: fixed;
+    background-color: #000;     /* Fill empty sides with black */
+}
+
+/* Dark overlay */
+.stApp::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(68, 68, 68, 0.6);
+    z-index: 0;
+}
+
+/* Keep content visible */
+.stApp > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Title */
+.title {
+    text-align: center;
+    color: red;
+    background: linear-gradient(45deg, #6a9b8e, #ffffff);
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: clamp(24px, 8vw, 60px);
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+/* Style for the instruction text */
+.instruction-text {
+    font-size: 18px;
+    color: #ff4b4b; /* Red text */
+    text-align: center;
+    font-weight: bold;
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+
+
+/* Metric cards */
+.metric-card {
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+}
+.cases { background-color: rgba(255, 193, 7, 0.8); }
+.deaths { background-color: rgba(220, 53, 69, 0.8); }
+.recovered { background-color: rgba(40, 167, 69, 0.8); }
+
+/* Input box */
+.stTextInput > div > div > input {
+    background-color: linear-gradient(45deg, #6a9b8e, #ffffff);
+    color: rgb(0, 0, 0);
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* Button */
+.stButton > button {
+    background: linear-gradient(45deg, #6a9b8e, #ffffff);
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.stspinner {
+    width: 20px;
+    height: 20px;
+    background-color: #6a9b8e;
+    border: 3px solid #f3f3f3; /* Light grey */
+    border-top: 3px solid #3498db; /* Blue */
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: auto;
+}
+.stButton > button:hover {
+  
+    transform: scale(1.05);
+}
+/* Sidebar background */
+[data-testid="stSidebar"] {
+    background: rgba(255, 255, 255, 0.85); /* semi-transparent */
+    backdrop-filter: blur(6px); 
+    min-height: 100vh;
+}
+
+
+.stTextArea textarea {
+    color: #000000 !important;   /* Black text */
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    line-height: 1.5 !important;
+}
+
+
+/* Change cursor in text area */
+.stTextArea textarea {
+    cursor: text !important;   /* default for typing */
+}
+
+.chat-box {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    max-height: 50vh; /* 50% of the viewport height */
+    overflow-y: auto;
+    font-family: monospace;
+    white-space: pre-wrap;
+    line-height: 1.4;
+    font-size: 1rem;
+}
+
+
+.user-text {
+    color: #4FC3F7;
+}
+
+.assistant-text {
+    color: #AED581;
+}

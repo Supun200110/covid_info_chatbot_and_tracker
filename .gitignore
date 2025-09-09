@@ -1,0 +1,40 @@
+# -----------------------------
+# Python cache / compiled files
+# -----------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# -----------------------------
+# Virtual environments
+# -----------------------------
+.venv/
+venv/
+ENV/
+
+# -----------------------------
+# Environment / secrets
+# -----------------------------
+.env
+
+# -----------------------------
+# VSCode settings
+# -----------------------------
+.vscode/
+
+# -----------------------------
+# macOS / Windows system files
+# -----------------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+# Other unwanted folders
+# -----------------------------
+share/
+etc/
+Lib/
+Scripts/
+Include/
